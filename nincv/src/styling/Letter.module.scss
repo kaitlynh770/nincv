@@ -1,0 +1,29 @@
+.letterContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); //make the background of the letter dim (much like regular animal crossing games)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letterBackground{
+    background-image: url(../assets/ac_letter.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 60%;
+    aspect-ratio: 16 / 10; //keeps natural proportions of the letter image
+    box-sizing: border-box; //padding doesn't overflow div
+    animation: slideUp 0.8s ease-out forwards;
+    padding: 70px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
