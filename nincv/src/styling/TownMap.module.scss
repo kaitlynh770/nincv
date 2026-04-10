@@ -7,8 +7,6 @@
     position: relative;
 }
 
-// ── Map ──────────────────────────────────────────────────────────
-
 .mapWrapper {
     position: relative;
     width: 100%;
@@ -23,7 +21,7 @@
     object-position: center;
 }
 
-// ── Hotspots ─────────────────────────────────────────────────────
+//hotspot styling + animation
 
 @keyframes pulse {
     0%   { box-shadow: 0 0 0 0 rgba(255, 236, 100, 0.7); }
@@ -55,8 +53,6 @@
     border-color: #E07B54;
     transform: translate(-50%, -50%) scale(1.15);
 }
-
-// ── Info Panel ───────────────────────────────────────────────────
 
 .infoPanel {
     position: absolute;
