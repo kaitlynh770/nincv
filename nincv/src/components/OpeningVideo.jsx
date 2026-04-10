@@ -3,7 +3,7 @@ import openingVideo from '../assets/getting the mail.mp4';
 import styles from '../styling/OpeningVideo.module.scss';
 import Letter from './Letter.jsx';
 
-const OpeningVideo = () => {
+const OpeningVideo = ({ onAboutMe }) => {
   const videoRef = useRef(null);
   const [videoEnded, setVideoEnded] = useState(false);
 
@@ -13,24 +13,24 @@ const OpeningVideo = () => {
     }
   };
 
-  if(videoEnded){
-    //return the Letter Component
-    return <Letter/>
+  if (videoEnded) {
+    return <Letter onAboutMe={onAboutMe} />;
   }
 
-return (
-    <div onClick={handleClick} className = {styles.openingVideoContainer}>
+  return (
+    <div onClick={handleClick} className={styles.openingVideoContainer}>
       <video
         ref={videoRef}
         autoPlay
         playsInline
         controls
         muted
-        onEnded = {() => setVideoEnded(true)}
+        onEnded={() => setVideoEnded(true)}
       >
         <source src={openingVideo} type="video/mp4" />
       </video>
     </div>
   );
 };
+
 export default OpeningVideo;

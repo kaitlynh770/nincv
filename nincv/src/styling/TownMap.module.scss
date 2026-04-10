@@ -1,0 +1,139 @@
+.townMapContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background: #7ecece;
+    position: relative;
+}
+
+// ── Map ──────────────────────────────────────────────────────────
+
+.mapWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.mapImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+// ── Hotspots ─────────────────────────────────────────────────────
+
+@keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(255, 236, 100, 0.7); }
+    70%  { box-shadow: 0 0 0 12px rgba(255, 236, 100, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 236, 100, 0); }
+}
+
+.hotspot {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: rgba(255, 236, 100, 0.5);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: background 0.2s ease, transform 0.2s ease;
+    animation: pulse 1.5s ease-out infinite;  // add this
+
+    &:hover {
+        background: rgba(255, 236, 100, 0.85);
+        transform: translate(-50%, -50%) scale(1.15);
+        animation: none;  // stop pulsing on hover so it doesn't look jittery
+    }
+}
+
+.hotspotActive {
+    background: rgba(255, 180, 50, 0.9);
+    border-color: #E07B54;
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+// ── Info Panel ───────────────────────────────────────────────────
+
+.infoPanel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 28%;
+    min-width: 280px;
+    background: rgba(255, 253, 245, 0.97);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+    font-family: 'ACFont', sans-serif;
+    z-index: 10;
+    border-radius: 24px 0 0 24px;  // top-left, top-right, bottom-right, bottom-left
+}
+
+.infoPanelVisible {
+    transform: translateX(0);
+}
+
+.gifArea {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f7f0;
+    overflow: hidden;
+    border-radius: 24px 0 0 0;  // only round the top-left to match the panel
+}
+
+.gif {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.gifPlaceholder {
+    font-size: 1.2rem;
+    color: #4a3f35;
+    opacity: 0.6;
+}
+
+.card {
+    height: 50%;
+    padding: 24px 28px;
+    background: #fffdf5;
+    border-top: 2px solid #e0d5c5;
+
+    h2 {
+        font-size: 1.2rem;
+        color: #4a3f35;
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        color: #6b5c50;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #4a3f35;
+    opacity: 0.6;
+
+    &:hover {
+        opacity: 1;
+    }
+}

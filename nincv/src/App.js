@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import OpeningVideo from './components/OpeningVideo.jsx'
+import { useState } from 'react';
+import OpeningVideo from './components/OpeningVideo.jsx';
+import TownMap from './components/TownMap.jsx';
 import './App.css';
-import './index.css'
+import './index.css';
 
 function App() {
-  return (
-    <div >
-      <OpeningVideo/>
-    </div>
-  );
+    const [view, setView] = useState('opening');
+
+    return (
+        <div>
+            {view === 'opening' && <OpeningVideo onAboutMe={() => setView('townmap')} />}
+            {view === 'townmap' && <TownMap />}
+        </div>
+    );
 }
 
 export default App;

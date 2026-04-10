@@ -22,8 +22,9 @@ import polished from '../assets/polishedUnderPressure.gif';
 import bugSquasher from '../assets/steppinOnBugs.gif';
 import dance from '../assets/squeakoid-animal-crossing.gif';
 import memories from '../assets/memories.gif';
+import github from '../assets/red-github.png';
 
-function Letter(){
+function Letter({onAboutMe}){
     useEffect(() => {
         const sound = new Audio(letterSound);
         sound.play();
@@ -81,11 +82,11 @@ function Letter(){
                         stalking
                     </button>
                 </Tippy>{" "}
-                your careers page for a while now so when I saw that Associate Engineer position pop up on your page, 
+                your careers page for a while now, so when I saw that Associate Engineer position pop up on your page, 
                 I 
                 <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {mashing}></img>}>
                     <button className = "buttonLink">
-                        click as fast as I could.
+                        clicked as fast as I could.
                     </button>
                 </Tippy>{" "} As for what I bring to the table, Creative Technology & Design has 
                 given me a versatile {" "}
@@ -135,6 +136,27 @@ function Letter(){
                 <br />
                 Kaitlyn Huynh
             </h3>
+            <div className="bottomRow">
+                <a href="https://github.com/kaitlynh770/nincv" target="_blank" rel="noopener noreferrer">
+                    <img src={github} className="github-image" alt="red github icon" />
+                </a>
+                <div className="buttonsContainer">
+                    <a href="http://kaitlynhuynh.me" target="_blank" rel="noopener noreferrer" className="button type--A">
+                        <div className="button__line"></div>
+                        <div className="button__line"></div>
+                        <span className="button__text">PORTFOLIO</span>
+                        <div className="button__drow1"></div>
+                        <div className="button__drow2"></div>
+                    </a>
+                    <a href="#" onClick = {onAboutMe} className="button type--B">
+                        <div className="button__line"></div>
+                        <div className="button__line"></div>
+                        <span className="button__text">ABOUT ME</span>
+                        <div className="button__drow1"></div>
+                        <div className="button__drow2"></div>
+                    </a>
+                </div>
+            </div>
            </div>
         </div>
     )
