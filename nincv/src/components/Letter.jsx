@@ -36,29 +36,29 @@ function Letter({onAboutMe}){
             <p>
                 Where do I even begin? I know this sounds typical, but truly - you guys have been there for <em><b>every</b></em> step of my life.
                 From hiding under my covers trying to beat Maylene (little did I know that I'd be facing {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {whitney}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {whitney} alt = "Whitney commaning Miltank and Miltank charging up"></img>}>
                     <button className = "buttonLink">
                         Whitney
                     </button>
                 </Tippy> {" "}in a couple of years with HGSS), 
                 to almost {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {plankton}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {plankton} alt = "Plankton running around to play the harmonica"></img>}>
                     <button className = "buttonLink">
                         passing out
                     </button>
                 </Tippy>{" "} trying to do a whole Lokomo duet in one breath, to having spontaneous midnight {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {terraform}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {terraform} alt = "Trying to destroy the cliff but since there's a flower on it, the cliff isn't able to be destroyed"></img>}>
                     <button className = "buttonLink">
                         terraforming 
                     </button>
                 </Tippy>{" "}
                 sessions, Nintendo has honestly been the longest relationship I've had (...what does that {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {spongebobWaiting}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {spongebobWaiting} alt = "Spongebob sitting at a table looking down with a cup of coffee"></img>}>
                     <button className = "buttonLink">
                         say about me, exactly?
                     </button>
                 </Tippy>{" "} Ah... that I'm super {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {skywardSword}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {skywardSword} alt = "Link pledging his allegiance to Zelda"></img>}>
                     <button className = "buttonLink">
                         loyal
                     </button>
@@ -66,25 +66,25 @@ function Letter({onAboutMe}){
             </p>
             <p>
                 If I can be honest, pursuing a B.S. in Creative Technology & Design at CU Boulder was never just about getting a degree. It was about finding my way to a company that lives at the intersection of {" "} 
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {creativity}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {creativity} alt = "Animal Crossing villagers and Tom Nook celebrating the opening of a bridge"></img>}>
                     <button className = "buttonLink">
                         creativity
                     </button>
                 </Tippy>{" "} and {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {rob}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {rob} alt = "ROB spinning around"></img>}>
                     <button className = "buttonLink">
                         technology.
                     </button>
                 </Tippy>{" "}
                 Nintendo has always been that company for me. I've been {" "}
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {marioCaught}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {marioCaught} alt = "Villager capturing Mario with his net"></img>}>
                     <button className = "buttonLink">
                         stalking
                     </button>
                 </Tippy>{" "}
                 your careers page for a while now, so when I saw that Associate Engineer position pop up on your page, 
                 I 
-                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {mashing}></img>}>
+                <Tippy theme = { "light" } content = {<img className = "tippy-image" src = {mashing} alt = "Mario Party button mashing minigame"></img>}>
                     <button className = "buttonLink">
                         clicked as fast as I could.
                     </button>
@@ -94,24 +94,24 @@ function Letter({onAboutMe}){
                     <button className = "buttonLink">toolkit.</button>
                 </Tippy>{" "} I've built and shipped applications across the stack, from React web apps to mobile applications in Xcode and Android Studio. 
                 In my current role as a full-stack developer, I've worn a lot of {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {hat} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {hat} alt = "Mario swinging Cappy around"/>}>
                     <button className = "buttonLink">
                         hats
                     </button>
                 </Tippy>{" "} - from PMO and data analytics to most recently leading {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {css} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {css} alt = "Peter Griffin struggling with a window labeled as CSS" />}>
                     <button className = "buttonLink">
                         UI development
                     </button>
                 </Tippy>{" "}for an AI chatbot deployed in a government-facing application. 
                 That experience taught me how to adapt fast, pick up unfamiliar technologies on the fly, and still deliver something {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {polished} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {polished} alt = "Toon Link doing his iconic item get animation but being too dizzy to do so" />}>
                     <button className = "buttonLink">
                         polished under pressure.
                     </button>
                 </Tippy>{" "} All my teammates even say that I'm the first to jump on a problem, 
                 my mom just says I'm nosy but either way, {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {bugSquasher} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {bugSquasher} alt = "Villager squishing all the bugs in their house and celebrating" />}>
                     <button className = "buttonLink">
                         bugs don't last long around me
                     </button>
@@ -119,13 +119,13 @@ function Letter({onAboutMe}){
             </p>
             <p>
                 So here I am, just a girl fueled by {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {dance} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {dance} alt = "Squeakoid dancing around"/>}>
                     <button className = "buttonLink">
                         excitement
                     </button>
                 </Tippy>{" "} (and the 2 cups of matcha I had earlier), ready to find a team full of passionate people to build something amazing with.
                 I can't wait to build the next generation's favorite {" "}
-                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {memories} />}>
+                <Tippy theme = {"light"} content = {<img className="tippy-image" src = {memories} alt = "Group of villagers on an island celebrating"/>}>
                     <button className = "buttonLink">
                         memories.
                     </button>

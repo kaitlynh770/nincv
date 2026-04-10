@@ -8,7 +8,7 @@ import blathers from '../assets/blathers.gif';
 import home from '../assets/home.gif';
 import buttonClick from '../assets/sound_effects/button_click.mp3';
 
-const ITEMS = {
+const ITEMS = { //info needed for each town desination
     default: {
         label: 'Welcome',
         gif: ambience,
@@ -41,46 +41,48 @@ const ITEMS = {
     },
 };
 
-const HOTSPOTS = [
+const HOTSPOTS = [ //coordinates for each destination in the town
     { id: 'villager',    x: 50,  y: 350, label: 'Filbert' },
     { id: 'museum',      x: 510,  y: 352, label: 'Museum' },
     { id: 'ableSisters', x: 530, y: 520, label: 'Able Sisters' },
     { id: 'house',       x: 763,  y: 525, label: 'My House' },
 ];
 
+//in order to place the hotspots, we're going to use the coordinates of each item on the image
 const IMAGE_WIDTH = 1280;
 const IMAGE_HEIGHT = 720;
 
 function TownMap({ onBack }) {
-    const [selected, setSelected] = useState('default');
+    const [selected, setSelected] = useState('default'); //always render the opening card
     const [imageRect, setImageRect] = useState(null);
     const imgRef = useRef(null);
 
-    useEffect(() => {
-        const updateRect = () => {
+    useEffect(() => { //this runs right when the townMap component renders
+        const updateRect = () => { 
             if (imgRef.current) {
-                setImageRect(imgRef.current.getBoundingClientRect());
+                setImageRect(imgRef.current.getBoundingClientRect()); //get the actual image size of the map
             }
         };
         updateRect();
-        window.addEventListener('resize', updateRect);
-        return () => window.removeEventListener('resize', updateRect);
+        window.addEventListener('resize', updateRect); //everytime the browser size is changed, we update the image size as well
+        return () => window.removeEventListener('resize', updateRect); //cleanup function
     }, []);
 
-    const getHotspotStyle = (x, y) => {
-        if (!imageRect) return { display: 'none' };
+    const getHotspotStyle = (x, y) => { //takes the natural image coordinates (in the form of x,y coordinates) and converts them into screen pixels
+        if (!imageRect) return { display: 'none' }; //if there is no valid image size, don't display anything
 
+        //aspect ratio of image and container
         const containerAspect = imageRect.width / imageRect.height;
         const imageAspect = IMAGE_WIDTH / IMAGE_HEIGHT;
 
         let renderedWidth, renderedHeight, offsetX, offsetY;
 
-        if (containerAspect > imageAspect) {
+        if (containerAspect > imageAspect) { //if container is wider than the image
             renderedHeight = imageRect.height;
             renderedWidth = renderedHeight * imageAspect;
             offsetX = (imageRect.width - renderedWidth) / 2;
             offsetY = 0;
-        } else {
+        } else { //if image is taller than the container
             renderedWidth = imageRect.width;
             renderedHeight = renderedWidth / imageAspect;
             offsetX = 0;
@@ -94,9 +96,9 @@ function TownMap({ onBack }) {
     };
 
     const handleSelect = (id) => {
-        const sound = new Audio(buttonClick);
+        const sound = new Audio(buttonClick); //play the sound effect each time the user clicks on the hotspot
         sound.play();
-        setSelected(prev => prev === id ? 'default' : id);
+        setSelected(prev => prev === id ? 'default' : id); //make sure to update which hotspot is selected
     };
 
     const item = ITEMS[selected];
@@ -130,7 +132,7 @@ function TownMap({ onBack }) {
                         <div className={styles.gifArea}>
                             {item.gif
                                 ? <img src={item.gif} alt={item.title} className={styles.gif} />
-                                : <div className={styles.gifPlaceholder}>gif goes here 🐾</div>
+                                : <div className={styles.gifPlaceholder}>Image/GIF here</div>
                             }
                         </div>
                         <div className={styles.card}>
