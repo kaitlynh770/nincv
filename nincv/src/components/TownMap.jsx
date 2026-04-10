@@ -4,6 +4,9 @@ import styles from '../styling/TownMap.module.scss';
 import fashion from '../assets/acnh_fashion.gif';
 import ambience from '../assets/seasalt_ambience.gif';
 import filbert from '../assets/dozing_off_buddies.gif';
+import blathers from '../assets/blathers.gif';
+import home from '../assets/home.gif';
+import buttonClick from '../assets/sound_effects/button_click.mp3';
 
 const ITEMS = {
     default: {
@@ -20,9 +23,9 @@ const ITEMS = {
     },
     museum: {
         label: 'Museum',
-        gif: null,
-        title: 'Blathers & The Museum',
-        description: 'Placeholder — tell your story here!',
+        gif: blathers,
+        title: 'A bit of a Blather-er',
+        description: 'Hooooo... WHO?! Much like a certain owl, I tend to light up the moment I find something new and exciting. Whether that be a problem I haven\'t tackled yet, a new framework or design issue, the unknown doesn\'t scare me and gives me the motivation to dive deep in. And just like Blathers, once I get to talking about something I\'m passionate about, I might just go on a bit longer than I intend to.',
     },
     ableSisters: {
         label: 'Able Sisters',
@@ -32,9 +35,9 @@ const ITEMS = {
     },
     house: {
         label: 'My House',
-        gif: null,
-        title: 'Home Sweet Home',
-        description: 'Placeholder — tell your story here!',
+        gif: home,
+        title: 'Finding my next island!',
+        description:'Every island in Animal Crossing reflects its player — it\'s a place you pour your heart and efforts into and call home. For me, Nintendo has always felt like that place. A team of people who care deeply about the experiences they create, who labor over the small details, and who genuinely believe that what they make matters and is creating impact. I\'ve been building toward this for a long time, and I can\'t think of a better place to settle down.'
     }
 };
 
@@ -50,6 +53,8 @@ function TownMap() {
     const [selected, setSelected] = useState('default');
 
     const handleSelect = (id) => {
+        const sound = new Audio(buttonClick)
+        sound.play();
         setSelected(prev => prev === id ? null : id);
     };
 
