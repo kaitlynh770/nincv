@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/nincv/static/css/main.921a2cd4.css",
+    "main.js": "/nincv/static/js/main.d33748b7.js",
+    "static/js/453.0061d5d8.chunk.js": "/nincv/static/js/453.0061d5d8.chunk.js",
+    "static/media/getting the mail.mp4": "/nincv/static/media/getting the mail.d4d4f30e71e381448b1d.mp4",
+    "static/media/plankton.gif": "/nincv/static/media/plankton.f27d483f10df4e5a2220.gif",
+    "static/media/polishedUnderPressure.gif": "/nincv/static/media/polishedUnderPressure.6fdab1ddd9a31408eca7.gif",
+    "static/media/FOT-SeuratProB.otf": "/nincv/static/media/FOT-SeuratProB.f46ad0b3bf622f23f514.otf",
+    "static/media/steppinOnBugs.gif": "/nincv/static/media/steppinOnBugs.223fb3789b31c4a8c805.gif",
+    "static/media/hat.gif": "/nincv/static/media/hat.c27dc55801878bf55620.gif",
+    "static/media/blathers.gif": "/nincv/static/media/blathers.67aac3978d1b54c3ee24.gif",
+    "static/media/dozing_off_buddies.gif": "/nincv/static/media/dozing_off_buddies.d11dde5addd93008b9cf.gif",
+    "static/media/seasalt_ambience.gif": "/nincv/static/media/seasalt_ambience.9f0e6935af2bb3dde692.gif",
+    "static/media/whitney.gif": "/nincv/static/media/whitney.1c4857acdd304b40525c.gif",
+    "static/media/css.gif": "/nincv/static/media/css.c3e9267574ef9e70cccb.gif",
+    "static/media/marioCaught.gif": "/nincv/static/media/marioCaught.f543044911d8d6fbe6e6.gif",
+    "static/media/memories.gif": "/nincv/static/media/memories.86825505f0c75f998329.gif",
+    "static/media/acnh_fashion.gif": "/nincv/static/media/acnh_fashion.0a364dcf41abc87eff27.gif",
+    "static/media/mashing.gif": "/nincv/static/media/mashing.baf748a5edc51ec3a5f0.gif",
+    "static/media/creativity.gif": "/nincv/static/media/creativity.6329077f022ac37fa441.gif",
+    "static/media/rob-the-robot.gif": "/nincv/static/media/rob-the-robot.f12d19f65af57a095bdf.gif",
+    "static/media/squeakoid-animal-crossing.gif": "/nincv/static/media/squeakoid-animal-crossing.9b3af1f54dedbe0946b3.gif",
+    "static/media/home.gif": "/nincv/static/media/home.d99c843d3c1522d15233.gif",
+    "static/media/skyward_sword.gif": "/nincv/static/media/skyward_sword.9c38dbd6cfe5811f5cff.gif",
+    "static/media/ac_letter.png": "/nincv/static/media/ac_letter.211f06f9ffb8184ff820.png",
+    "static/media/multi.gif": "/nincv/static/media/multi.ce5f4fe3437b5545742b.gif",
+    "static/media/spongebob-waiting.gif": "/nincv/static/media/spongebob-waiting.5cf2e4c2abfb9ca04dbb.gif",
+    "static/media/seasalt.jpg": "/nincv/static/media/seasalt.71d3151d19926b89e61b.jpg",
+    "static/media/terraforming.jpg": "/nincv/static/media/terraforming.c42f78c246aba95779e4.jpg",
+    "static/media/red-github.png": "/nincv/static/media/red-github.ce65477a1ba8adbcb2e1.png",
+    "static/media/open_envelope.mp3": "/nincv/static/media/open_envelope.e46bc3608844f7991909.mp3",
+    "static/media/button_click.mp3": "/nincv/static/media/button_click.1991d617aacd9b6a95b3.mp3",
+    "index.html": "/nincv/index.html",
+    "main.921a2cd4.css.map": "/nincv/static/css/main.921a2cd4.css.map",
+    "main.d33748b7.js.map": "/nincv/static/js/main.d33748b7.js.map",
+    "453.0061d5d8.chunk.js.map": "/nincv/static/js/453.0061d5d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.921a2cd4.css",
+    "static/js/main.d33748b7.js"
+  ]
+}
