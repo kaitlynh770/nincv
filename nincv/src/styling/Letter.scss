@@ -12,12 +12,67 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 70%;
-  aspect-ratio: 16 / 10;
+  max-height: 85vh;
+  overflow-y: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   box-sizing: border-box;
   animation: slideUp 0.8s ease-out forwards;
-  padding: 70px 90px 70px 90px;
+  padding: 45px 80px;   // reduced from 70px 90px
   font-family: 'ACFont', sans-serif;
   color: #4a3f35;
+  font-size: 0.9rem;    // slightly smaller base font
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  h3 {
+    margin: 0 0 8px 0;    // tighten the heading margins
+  }
+
+  p {
+    margin: 0 0 10px 0;   // tighten paragraph spacing
+    line-height: 1.4;     // slightly tighter line height
+  }
+
+  @media (max-height: 900px) {
+    padding: 35px 70px;
+    font-size: 0.85rem;
+  }
+
+  @media (max-height: 800px) {
+    padding: 25px 60px;
+    font-size: 0.8rem;
+  }
+
+
+  @media (max-height: 900px) {
+    padding: 50px 70px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-height: 750px) {
+    padding: 20px 55px;
+    font-size: 0.75rem;
+  }
+
+  @media (max-height: 600px) {
+    padding: 24px 40px;
+    font-size: 0.75rem;
+  }
+
+  // wider padding on smaller screens
+  @media (max-width: 900px) {
+    width: 85%;
+    padding: 50px 60px;
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+    padding: 30px 30px;
+    font-size: 0.8rem;
+  }
 }
 
 .buttonLink {
@@ -36,7 +91,6 @@
 .tippy-image {
   align-content: center;
   justify-content: center;
-  width: 10em;
   padding: 1em;
   overflow: hidden;
   height: auto;
@@ -47,11 +101,11 @@
   margin-top: none;
   width: 1.5em;
 }
+
 .bottomRow {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  margin-top: 16px;
+  justify-content: space-between;
 }
 
 .buttonsContainer {
@@ -68,8 +122,8 @@
 }
 
 .type--B {
-  --line_color : #1b1919 ;
-  --back_color : #E9ECFF;
+  --line_color: #1b1919;
+  --back_color: #E9ECFF;
 }
 
 .button {
